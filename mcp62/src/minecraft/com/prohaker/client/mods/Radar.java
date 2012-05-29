@@ -5,10 +5,13 @@ import java.util.ArrayList;
 import org.lwjgl.util.Color;
 
 import com.prohaker.client.core.Haker;
+import com.prohaker.client.gui.InGame;
 import com.prohaker.client.utils.Tickable;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.src.EntityOtherPlayerMP;
+import net.minecraft.src.FontRenderer;
+import net.minecraft.src.ScaledResolution;
 
 public class Radar extends Mod implements Tickable{
 
@@ -40,7 +43,19 @@ public class Radar extends Mod implements Tickable{
             if(player instanceof EntityOtherPlayerMP) {
                 EntityOtherPlayerMP otherPlayer = (EntityOtherPlayerMP) player;
                 String toDisplay = otherPlayer.username + " [" + Math.round(haker.getUtils().getPlayerDistanceFromEntity(otherPlayer)) + "]";
-                minecraft.fontRenderer.drawString(toDisplay, 2, 8 * pos, Color.RED.getRed());
+                int dis = (int) haker.getUtils().getPlayerDistanceFromEntity(otherPlayer);
+                
+                if (dis <= 20 && dis > 0) {
+                	minecraft.fontRenderer.drawStringWithShadow(toDisplay, InGame.sc.getScaledWidth() - minecraft.fontRenderer.getStringWidth(toDisplay) - 2, 12 * pos, 0xFF0000); }
+                else if (dis <= 50 && dis > 20) {
+                	minecraft.fontRenderer.drawStringWithShadow(toDisplay, InGame.sc.getScaledWidth() - minecraft.fontRenderer.getStringWidth(toDisplay) - 2, 12 * pos, 0xFF6600);
+                }
+                else if ( dis > 50) {
+                	minecraft.fontRenderer.drawStringWithShadow(toDisplay, InGame.sc.getScaledWidth() - minecraft.fontRenderer.getStringWidth(toDisplay) - 2, 12 * pos, 0x33FF00);
+                
+                }
+                
+                
                 pos++;
             }
         }

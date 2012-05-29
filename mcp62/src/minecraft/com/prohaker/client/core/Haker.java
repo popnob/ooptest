@@ -9,6 +9,8 @@ import com.prohaker.client.mods.KillAura;
 import com.prohaker.client.mods.Radar;
 import com.prohaker.client.utils.Tickable;
 import com.prohaker.client.utils.Utils;
+import com.prohaker.client.utils.Vars;
+import com.prohaker.client.gui.*;
 import com.prohaker.commands.GuiConsole;
 
 import net.minecraft.client.Minecraft;
@@ -17,7 +19,10 @@ public class Haker {
 
     public Haker(Minecraft mc) {
         minecraft = mc;
+        vars = new Vars();
+        ingame = new InGame(mc);
         ck = new CheckKey(mc);
+        
         init();
     }
 
@@ -65,8 +70,10 @@ public class Haker {
 
     private KillAura killaura;
     private Radar radar;
+    public static Vars vars;
     private Fullbright fullbright;
     private CheckKey ck;
+    public static InGame ingame;
     private Utils utils;
     private Minecraft minecraft;
     private ArrayList<Tickable> tickables = new ArrayList<Tickable>();

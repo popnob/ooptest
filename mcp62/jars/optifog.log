@@ -1,6 +1,6 @@
 
 OptiFine_1.2.5_HD_S_AA_A7
-Tue May 29 18:37:31 CEST 2012
+Tue May 29 22:24:47 CEST 2012
 OS: Windows 7 (amd64) version 6.1
 Java: 1.7.0_03, Oracle Corporation
 VM: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
@@ -8,38 +8,40 @@ LWJGL: 2.4.2
 OpenGL: GeForce GTX 570/PCIe/SSE2 version 4.2.0, NVIDIA Corporation
 OpenGL Version: 4.0
 Class not present: forge.ForgeHooksClient
-TextureFX registered: net.minecraft.src.TextureLavaFX@194e2c2f, texId: 7, index: 237
-TextureFX registered: net.minecraft.src.TextureWaterFX@5bc9b01d, texId: 7, index: 205
-TextureFX registered: net.minecraft.src.TexturePortalFX@16496eff, texId: 7, index: 14
-TextureFX registered: net.minecraft.src.TextureCompassFX@56515185, texId: 8, index: 54
-TextureFX registered: net.minecraft.src.TextureWatchFX@633f09d5, texId: 8, index: 70
-TextureFX registered: net.minecraft.src.TextureWaterFlowFX@3f9eb1da, texId: 7, index: 206
-TextureFX registered: net.minecraft.src.TextureLavaFlowFX@4bae7fd7, texId: 7, index: 238
-TextureFX registered: net.minecraft.src.TextureFlamesFX@2d4b2312, texId: 7, index: 31
-TextureFX registered: net.minecraft.src.TextureFlamesFX@1feb89f9, texId: 7, index: 47
-TextureFX removed: net.minecraft.src.TextureLavaFX@194e2c2f, texId: 7, index: 237
-TextureFX registered: net.minecraft.src.TextureHDLavaFX@4f8efdf7, texId: 7, index: 237
-TextureFX removed: net.minecraft.src.TextureWaterFX@5bc9b01d, texId: 7, index: 205
-TextureFX registered: net.minecraft.src.TextureHDWaterFX@34c38bef, texId: 7, index: 205
-TextureFX removed: net.minecraft.src.TexturePortalFX@16496eff, texId: 7, index: 14
-TextureFX registered: net.minecraft.src.TextureHDPortalFX@121812f9, texId: 7, index: 14
-TextureFX removed: net.minecraft.src.TextureWaterFlowFX@3f9eb1da, texId: 7, index: 206
-TextureFX registered: net.minecraft.src.TextureHDWaterFlowFX@6a85a2b6, texId: 7, index: 206
-TextureFX removed: net.minecraft.src.TextureLavaFlowFX@4bae7fd7, texId: 7, index: 238
-TextureFX registered: net.minecraft.src.TextureHDLavaFlowFX@6b7d915c, texId: 7, index: 238
-TextureFX removed: net.minecraft.src.TextureFlamesFX@2d4b2312, texId: 7, index: 31
-TextureFX registered: net.minecraft.src.TextureHDFlamesFX@d26626, texId: 7, index: 31
-TextureFX removed: net.minecraft.src.TextureFlamesFX@1feb89f9, texId: 7, index: 47
-TextureFX registered: net.minecraft.src.TextureHDFlamesFX@75304935, texId: 7, index: 47
-TextureFX removed: net.minecraft.src.TextureCompassFX@56515185, texId: 8, index: 54
-TextureFX registered: net.minecraft.src.TextureHDCompassFX@5c6e3b4c, texId: 8, index: 54
-TextureFX removed: net.minecraft.src.TextureWatchFX@633f09d5, texId: 8, index: 70
-TextureFX registered: net.minecraft.src.TextureHDWatchFX@1004243a, texId: 8, index: 70
+TextureFX registered: net.minecraft.src.TextureLavaFX@4b388e0b, texId: 7, index: 237
+TextureFX registered: net.minecraft.src.TextureWaterFX@297d1d8b, texId: 7, index: 205
+TextureFX registered: net.minecraft.src.TexturePortalFX@551ea5f4, texId: 7, index: 14
+TextureFX registered: net.minecraft.src.TextureCompassFX@633f09d5, texId: 8, index: 54
+TextureFX registered: net.minecraft.src.TextureWatchFX@64bb9a0a, texId: 8, index: 70
+TextureFX registered: net.minecraft.src.TextureWaterFlowFX@587e3a30, texId: 7, index: 206
+TextureFX registered: net.minecraft.src.TextureLavaFlowFX@471e52b3, texId: 7, index: 238
+TextureFX registered: net.minecraft.src.TextureFlamesFX@17c78a3f, texId: 7, index: 31
+TextureFX registered: net.minecraft.src.TextureFlamesFX@2d453a4b, texId: 7, index: 47
+TextureFX removed: net.minecraft.src.TextureLavaFX@4b388e0b, texId: 7, index: 237
+TextureFX registered: net.minecraft.src.TextureHDLavaFX@7727e6ce, texId: 7, index: 237
+TextureFX removed: net.minecraft.src.TextureWaterFX@297d1d8b, texId: 7, index: 205
+TextureFX registered: net.minecraft.src.TextureHDWaterFX@5ca21b7f, texId: 7, index: 205
+TextureFX removed: net.minecraft.src.TexturePortalFX@551ea5f4, texId: 7, index: 14
+TextureFX registered: net.minecraft.src.TextureHDPortalFX@16bb5e5c, texId: 7, index: 14
+TextureFX removed: net.minecraft.src.TextureWaterFlowFX@587e3a30, texId: 7, index: 206
+TextureFX registered: net.minecraft.src.TextureHDWaterFlowFX@672ff5ac, texId: 7, index: 206
+TextureFX removed: net.minecraft.src.TextureLavaFlowFX@471e52b3, texId: 7, index: 238
+TextureFX registered: net.minecraft.src.TextureHDLavaFlowFX@7daa2420, texId: 7, index: 238
+TextureFX removed: net.minecraft.src.TextureFlamesFX@17c78a3f, texId: 7, index: 31
+TextureFX registered: net.minecraft.src.TextureHDFlamesFX@2d29f154, texId: 7, index: 31
+TextureFX removed: net.minecraft.src.TextureFlamesFX@2d453a4b, texId: 7, index: 47
+TextureFX registered: net.minecraft.src.TextureHDFlamesFX@1ca2d8f6, texId: 7, index: 47
+TextureFX removed: net.minecraft.src.TextureCompassFX@633f09d5, texId: 8, index: 54
+TextureFX registered: net.minecraft.src.TextureHDCompassFX@6221a993, texId: 8, index: 54
+TextureFX removed: net.minecraft.src.TextureWatchFX@64bb9a0a, texId: 8, index: 70
+TextureFX registered: net.minecraft.src.TextureHDWatchFX@ddc5a99, texId: 8, index: 70
 Loading custom colors: /misc/grasscolor.png
 Loading custom colors: /misc/foliagecolor.png
-Class not present: ModLoader
 Class not present: LightCache
 Method not found: net.minecraft.src.Block.isLadder
+Class not present: forge.MinecraftForgeClient
+Class not present: LightCache
+Method not found: net.minecraft.src.Block.isLadder
+Class not present: forge.MinecraftForgeClient
 Class not present: ModLoader
-Class not present: forge.MinecraftForgeClient
-Class not present: forge.MinecraftForgeClient
+Class not present: ModLoader

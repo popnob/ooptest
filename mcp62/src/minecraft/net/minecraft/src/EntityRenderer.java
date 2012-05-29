@@ -15,6 +15,8 @@ import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GLContext;
 import org.lwjgl.util.glu.GLU;
 
+import com.prohaker.client.core.Haker;
+
 public class EntityRenderer
 {
     public static boolean anaglyphEnable = false;
@@ -1153,6 +1155,9 @@ public class EntityRenderer
                 }
 
                 mc.ingameGUI.renderGameOverlay(par1, mc.currentScreen != null, k, j1);
+                
+                //ProHaker
+                Haker.ingame.renderGameOverlay();
 
                 if (mc.gameSettings.ofFastDebugInfo)
                 {

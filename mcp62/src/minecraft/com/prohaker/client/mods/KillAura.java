@@ -43,7 +43,7 @@ public class KillAura extends Mod implements Tickable {
     	    double d2 = e.posZ - minecraft.thePlayer.posZ;
     	    double d1 = e.posY - minecraft.thePlayer.posY;
     	    double d3 = MathHelper.sqrt_double(d * d + d2 * d2);
-    	    float f = (float)((Math.atan2(d2, d) * 180D) / Math.PI) - 0F;
+    	    float f = (float)((Math.atan2(d2, d) * 180D) / Math.PI) - 90F;
     	    float f1 = (float)(-((Math.atan2(d1, d3) * 180D) / Math.PI));
     	    
     	    minecraft.getSendQueue().addToSendQueue(new Packet12PlayerLook(f, f1, true));

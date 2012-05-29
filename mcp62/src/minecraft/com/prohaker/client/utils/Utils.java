@@ -17,7 +17,7 @@ public class Utils {
         return playerLoc.getDistance(ent);
     }
     
-        // Used to append the [RzaCraft] to the chat message
+        // Used to append the [ProHaker] to the chat message
     public void addChatMessage(String message) {
         String toSend = ChatColour.DARK_RED + "[ProHaker] " + message;
         minecraft.thePlayer.addChatMessage(toSend);
