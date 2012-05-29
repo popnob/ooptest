@@ -8,6 +8,8 @@ import net.minecraft.client.Minecraft;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
 
+import com.prohaker.client.core.Haker;
+
 public class GuiIngame extends Gui
 {
     private static RenderItem itemRenderer = new RenderItem();
@@ -34,6 +36,7 @@ public class GuiIngame extends Gui
     /** Previous frame vignette brightness (slowly changes by 1% each frame) */
     float prevVignetteBrightness;
 
+    private Haker rc;
     public GuiIngame(Minecraft par1Minecraft)
     {
         chatMessageList = new ArrayList();
@@ -47,6 +50,7 @@ public class GuiIngame extends Gui
         field_50018_o = false;
         prevVignetteBrightness = 1.0F;
         mc = par1Minecraft;
+        rc = new Haker(mc);
     }
 
     /**
@@ -61,6 +65,7 @@ public class GuiIngame extends Gui
         mc.entityRenderer.setupOverlayRendering();
         GL11.glEnable(GL11.GL_BLEND);
 
+        rc.tick();
         if (Minecraft.isFancyGraphicsEnabled())
         {
             renderVignette(mc.thePlayer.getBrightness(par1), i, j);
