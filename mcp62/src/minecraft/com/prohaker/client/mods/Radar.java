@@ -46,12 +46,12 @@ public class Radar extends Mod implements Tickable{
                 int dis = (int) haker.getUtils().getPlayerDistanceFromEntity(otherPlayer);
                 
                 if (dis <= 20 && dis > 0) {
-                	minecraft.fontRenderer.drawStringWithShadow(toDisplay, InGame.sc.getScaledWidth() - minecraft.fontRenderer.getStringWidth(toDisplay) - 2, 12 * pos, 0xFF0000); }
+                	minecraft.fontRenderer.drawStringWithShadow(toDisplay, InGame.sc.getScaledWidth() - InGame.fr.getStringWidth(toDisplay) - 2, 12 * pos, 0xFF0000); }
                 else if (dis <= 50 && dis > 20) {
-                	minecraft.fontRenderer.drawStringWithShadow(toDisplay, InGame.sc.getScaledWidth() - minecraft.fontRenderer.getStringWidth(toDisplay) - 2, 12 * pos, 0xFF6600);
+                	minecraft.fontRenderer.drawStringWithShadow(toDisplay, InGame.sc.getScaledWidth() - InGame.fr.getStringWidth(toDisplay) - 2, 12 * pos, 0xFF6600);
                 }
                 else if ( dis > 50) {
-                	minecraft.fontRenderer.drawStringWithShadow(toDisplay, InGame.sc.getScaledWidth() - minecraft.fontRenderer.getStringWidth(toDisplay) - 2, 12 * pos, 0x33FF00);
+                	minecraft.fontRenderer.drawStringWithShadow(toDisplay, InGame.sc.getScaledWidth() - InGame.fr.getStringWidth(toDisplay) - 2, 12 * pos, 0x33FF00);
                 
                 }
                 

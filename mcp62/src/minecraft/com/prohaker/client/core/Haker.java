@@ -57,7 +57,7 @@ public class Haker {
     }
 
     private void checkForKeyPress() {
-        if (ck.checkKey(Keyboard.KEY_R)) {
+        if (ck.checkKey(Keyboard.KEY_P)) {
             radar.toggle();
         }
         if (ck.checkKey(Keyboard.KEY_C)) {

@@ -14,7 +14,7 @@ public class PlayerControllerMP extends PlayerController
     private int currentblockZ;
 
     /** Current block damage (MP) */
-    private float curBlockDamageMP;
+    public static float curBlockDamageMP;
 
     /** Previous block damage (MP) */
     private float prevBlockDamageMP;
@@ -27,7 +27,7 @@ public class PlayerControllerMP extends PlayerController
     /**
      * Delays the first damage on the block after the first click on the block
      */
-    private int blockHitDelay;
+    public static int blockHitDelay;
 
     /** Tells if the player is hitting a block */
     private boolean isHittingBlock;

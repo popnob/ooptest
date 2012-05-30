@@ -1,15 +1,12 @@
 package com.prohaker.client.mods;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.src.Entity;
 import net.minecraft.src.*;
-import net.minecraft.src.Packet7UseEntity;
-import net.minecraft.src.EntityLiving;
-import net.minecraft.src.EntityPlayer;
 
 import com.prohaker.client.core.Haker;
 import com.prohaker.client.utils.EntityUtils;
 import com.prohaker.client.utils.Tickable;
+import com.prohaker.client.utils.Vars;
 import com.prohaker.client.utils.Watcher;
 
 public class KillAura extends Mod implements Tickable {
@@ -22,11 +19,13 @@ public class KillAura extends Mod implements Tickable {
 
     @Override
     public void onEnable() {
+    	Vars.killaura = true;
         haker.addToTick(this);
         haker.getUtils().addChatMessage(getActive());
     }
     @Override
     public void onDisable() {
+    	Vars.killaura = false;
         haker.removeFromTick(this);
         haker.getUtils().addChatMessage(getActive());
     }
@@ -38,6 +37,9 @@ public class KillAura extends Mod implements Tickable {
     	Entity e = (Entity) minecraft.theWorld.getLoadedEntityList().get(i6);
     	if((e != minecraft.thePlayer) && !e.isDead && minecraft.thePlayer.getDistanceSqToEntity(e) < 20D && e instanceof EntityLiving)
     	{
+    		hitDelay++;
+    		if(hitDelay >= 14)
+    		{
     		
     	    double d = e.posX - minecraft.thePlayer.posX;
     	    double d2 = e.posZ - minecraft.thePlayer.posZ;
@@ -50,13 +52,15 @@ public class KillAura extends Mod implements Tickable {
     	    minecraft.getSendQueue().addToSendQueue(new Packet7UseEntity(0, e.entityId, 1));
     	    minecraft.getSendQueue().addToSendQueue(new Packet18Animation(minecraft.thePlayer, 1));
     	    
+    	    hitDelay = 0;
 
     	
             }
     	}
+    	}
    
     }
-
+    int hitDelay;
     private Haker haker;
     private Minecraft minecraft;
 

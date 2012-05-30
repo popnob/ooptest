@@ -44,6 +44,8 @@ if(Vars.coords){
 		int Pos = 12 * Gui;
 		int yy = 32;
 		if(Vars.fullbright){fr.drawStringWithShadow("\2472Fullbright\247f", 2, yy += 10, 0xffffff);}
+		if(Vars.radar){fr.drawStringWithShadow("\2472Radar\247f", 2, yy += 10, 0xffffff);}
+		if(Vars.killaura){fr.drawStringWithShadow("\2472Aura\247f", 2, yy += 10, 0xffffff);}
 	}
 }
 
